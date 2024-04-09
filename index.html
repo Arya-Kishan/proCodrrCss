@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100vw;
+            height: 90vh;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            color: white;
+        }
+
+        .box1 {
+            background-color: red;
+            height: 90vh;
+            position: relative;
+            background: linear-gradient(#322692, #521A7C);
+            padding: 5px;
+            overflow: hidden;
+        }
+
+        .box1 h1 {
+            height: 20%;
+            z-index: 10;
+            display: flex;
+            justify-content: start;
+            align-items: start;
+            /* padding-left: 10px; */
+        }
+
+        .box1 h1 img{
+            width: 25px;
+        }
+
+        .box1>div {
+            height: 60%;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: center;
+            z-index: 10;
+        }
+
+        .box1>p {
+            height: 10%;
+            z-index: 10;
+        }
+
+        .box1 .blob1{
+            position: absolute;
+            top: -20%;
+            right: -40%;
+            width: 400px;
+            height: 400px;
+        }
+
+        .box1 .blob2{
+            position: absolute;
+            bottom: -50%;
+            left: -80%;
+            width: 600px;
+            height: 600px;
+            rotate: 10deg;
+        }
+        
+
+        .box1 .circle {
+            border-radius: 50%;
+            position: absolute;
+            z-index: 5;
+        }
+
+        .box1 .circle1 {
+            top: 20%;
+            left: 50%;
+            width: 100px;
+            height: 100px;
+            background: linear-gradient(#437FCD, #322692);
+        }
+
+        .box1 .circle2 {
+            top: 50%;
+            left: 10%;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(#AE0BA8, #322692);
+        }
+
+        .box1 .circle3 {
+            top: 80%;
+            left: 70%;
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(#AE0BA8, #322692);
+        }
+
+        .box2 {
+            background-color: #322692;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 10%;
+            padding: 50px;
+        }
+
+        .box2>h1 {
+            font-size: 20px;
+            width: 100%;
+        }
+
+        .box2>input {
+            background-color: #322692;
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid black;
+            outline: none;
+        }
+
+        .box2>button {
+            padding: 5px;
+            width: 100%;
+            background: linear-gradient(to right,#437FCD,#AE0BA8);
+            border: none;
+            border-radius: 10px;
+        }
+
+        .box2 .icons img {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+            padding: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <section class="box">
+
+        <div class="box1">
+
+            <h1>
+                <img src="logo1.svg" alt="" srcset="">
+                <span>LOGO</span>
+            </h1>
+
+            <div>
+                <h1>WELCOME PAGE</h1>
+                <P>Sign in to continue access</P>
+            </div>
+
+            <p>ww.arya.com</p>
+
+            <span class="circle circle1"></span>
+            <span class="circle circle2"></span>
+            <span class="circle circle3"></span>
+
+            <img class="blob1" src="blob.svg" alt="" srcset="">
+            <img class="blob2" src="blob.svg" alt="" srcset="">
+
+        </div>
+
+
+
+
+        <div class="box2">
+
+            <h1>SIGN IN</h1>
+            <input type="text" placeholder="Name...">
+            <input type="text" placeholder="Phone...">
+            <input type="text" placeholder="Email...">
+            <input type="text" placeholder="Password...">
+            <button>Sign</button>
+            <div class="icons">
+                <img src="fb.svg" alt="" srcset="">
+                <img src="x.svg" alt="" srcset="">
+                <img src="gmail.svg" alt="" srcset="">
+            </div>
+
+
+        </div>
+
+    </section>
+
+</body>
+
+</html>
